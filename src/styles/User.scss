@@ -47,5 +47,18 @@ body {
 .wrapper .box input:focus{
    padding: 10px 5px;
    background: $gray-color;
+   margin-top: 5px;
    
+}
+
+.wrapper .box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: $black-color;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px;
+  font-family: $font-roboto;
+
 }
