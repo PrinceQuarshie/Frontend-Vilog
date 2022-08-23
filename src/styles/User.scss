@@ -6,34 +6,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-    background-color: $orange-color;
+  background-color: $orange-color;
 }
 
 .container {
+  margin-top: 9rem;
   width: 80%;
   padding: 20px;
   background: $main-color;
-
+  border-radius: 18px;
 }
 
-
-
-  .wrapper {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 30px;
-    gap: 30px;
-
-  }
-
-     .wrapper .box {
-      width: 90%;
-      position: relative;
-      padding: 15px;
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  gap: 30px;
 }
 
-  .wrapper .box input {
+.wrapper .box {
+  width: 90%;
+  position: relative;
+  padding: 15px;
+}
+
+.wrapper .box input {
   width: 100%;
   font-size: 20px;
   background: transparent;
@@ -43,12 +41,10 @@ body {
   transition: 0.5s linear;
 }
 
-
-.wrapper .box input:focus{
-   padding: 10px 5px;
-   background: $gray-color;
-   margin-top: 5px;
-   
+.wrapper .box input:focus {
+  padding: 10px 5px;
+  background: $gray-color;
+  margin-top: 5px;
 }
 
 .wrapper .box label {
@@ -60,5 +56,27 @@ body {
   font-weight: bold;
   padding: 20px;
   font-family: $font-roboto;
+  padding: 20px;
+  transition: 0.5s linear;
+}
 
+.wrapper .box input:focus ~ label,
+.wrapper .box input:valid ~ label {
+  padding: 0;
+}
+
+.container input[type="submit"] {
+  background: $orange-color;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: $font-roboto;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background: $gray-color;
+  }
 }
