@@ -2,22 +2,36 @@ import React from "react";
 import "../styles/User.scss";
 function User() {
   return (
-    <section className="container">
-      <form className="form-container">
+    <div className="container">
         <img src="/" alt="" />
-        <label>First Name</label>
-        <input type="text" placeholder="First Name" />
+      <form>
+         <div className="wrapper">
+           <div className="box">
+            <input type="text" name="fname" id="fname"/>
+            <label>First Name</label> 
+           </div>
 
-        <label> Last Name</label>
-        <input type="text" placeholder="Last Name" />
+           <div className="box">
+            <input type="text" name="fname" id="fname"/>
+            <label>Last Name</label> 
+           </div>
 
-        <label>Email</label>
-        <input type="text" placeholder="Email" />
+           <div className="box">
+            <input type="email" name="email" id="email"/>
+            <label>Email</label> 
+           </div>
 
-        <label>Phone</label>
-        <input type="text" placeholder="Phone" />
+           <div className="box">
+            <input type="tel" name="tel" id="tel"/>
+            <label>Phone</label> 
+           </div>
+
+         <input type="submit" value="submit"/>
+
+         </div>
+
       </form>
-    </section>
+    </div>
   );
 }
 
