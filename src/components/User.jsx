@@ -6,16 +6,16 @@ function User() {
   return (
     <body>
       <div className="container">
-        <div className="title">Sign In</div>
+        <div className="title">Fill Form</div>
         <form>
           <div className="user-details">
             <div className="input-box">
               <span className="details">First Name</span>
-              <input type="text" placeholder="Enter your first" />
+              <input type="text" placeholder="Enter your first name" />
             </div>
             <div className="input-box">
               <span className="details">Last Name</span>
-              <input type="text" placeholder="Enter your last" />
+              <input type="text" placeholder="Enter your last name" />
             </div>
             <div className="input-box">
               <span className="details">Email</span>
