@@ -2,81 +2,34 @@
 @import "./fonts";
 
 body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $orange-color;
+
+    background-image: url('../assets/office-entrance.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: $font-roboto;  
+    margin-top: 40px;
+  
 }
 
 .container {
-  margin-top: 9rem;
-  width: 80%;
-  padding: 20px;
-  background: $main-color;
-  border-radius: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 800px;
+  margin: auto;
+
+  .regform {
+    width: 800px;
+  }
 }
+ form {
+   padding: 10px;
+ }
+
 
 .wrapper {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 30px;
-  gap: 30px;
+  height: 100px;
 }
 
-.wrapper .box {
-  width: 90%;
-  position: relative;
-  padding: 15px;
-}
+label {
 
-.wrapper .box input {
-  width: 100%;
-  font-size: 20px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid $black-color;
-  transition: 0.5s linear;
-}
-
-.wrapper .box input:focus {
-  padding: 10px 5px;
-  background: $gray-color;
-  margin-top: 5px;
-}
-
-.wrapper .box label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: $black-color;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 20px;
-  font-family: $font-roboto;
-  padding: 20px;
-  transition: 0.5s linear;
-}
-
-.wrapper .box input:focus ~ label,
-.wrapper .box input:valid ~ label {
-  padding: 0;
-}
-
-.container input[type="submit"] {
-  background: $orange-color;
-  padding: 15px 30px;
-  border: none;
-  outline: none;
-  font-size: 15px;
-  font-family: $font-roboto;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-
-  &:hover {
-    background: $gray-color;
-  }
 }
